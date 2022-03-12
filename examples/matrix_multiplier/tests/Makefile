@@ -1,8 +1,10 @@
 # This file is public domain, it can be freely copied without restrictions.
 # SPDX-License-Identifier: CC0-1.0
 
-TOPLEVEL_LANG ?= verilog
-SIM ?= icarus
+TOPLEVEL_LANG ?= vhdl
+#SIM=ghdl
+SIM=questa
+GUI=1 
 
 PWD=$(shell pwd)
 

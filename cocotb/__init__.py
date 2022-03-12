@@ -255,6 +255,10 @@ def _initialise_testbench(argv_):  # pragma: no cover
     The test must be defined by the environment variables
     :envvar:`MODULE` and :envvar:`TESTCASE`.
     """
+
+    for i in range(1,20):
+        print("_initialize_testbench default implementation called!")
+
     with _rlock:
 
         if "COCOTB_LIBRARY_COVERAGE" in os.environ:

@@ -714,7 +714,7 @@ def get_ext():
     )
     ext.append(modelsim_vhpi_ext)
 
-    vsim_path = find_executable("vopt")
+    vsim_path = '/home/markus/intelFPGA/21.1/questa_fse/linux_x86_64/vopt'
     if vsim_path is None:
         logger.warning(
             "Modelsim/Questa installation not found: did not find the 'vopt' executable. No FLI interface will be available."

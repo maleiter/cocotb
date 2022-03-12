@@ -77,7 +77,7 @@ $(COCOTB_RESULTS_FILE): analyse $(CUSTOM_SIM_DEPS)
 
 	MODULE=$(MODULE) TESTCASE=$(TESTCASE) TOPLEVEL=$(TOPLEVEL) TOPLEVEL_LANG=$(TOPLEVEL_LANG) \
 	$(SIM_CMD_PREFIX) $(CMD) -r $(GHDL_ARGS) --workdir=$(SIM_BUILD) -P$(SIM_BUILD) --work=$(RTL_LIBRARY) $(TOPLEVEL) --vpi=$(shell cocotb-config --lib-name-path vpi ghdl) $(SIM_ARGS) $(PLUSARGS)
-
+	
 	$(call check_for_results_file)
 
 clean::

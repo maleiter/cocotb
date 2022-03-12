@@ -27,7 +27,10 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###############################################################################
 
-TOPLEVEL_LANG ?= verilog
+TOPLEVEL_LANG ?= vhdl
+#SIM=ghdl
+SIM=questa
+GUI=1 
 
 PWD=$(shell pwd)
 
